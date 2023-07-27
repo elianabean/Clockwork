@@ -14,6 +14,7 @@
 		DDBA344E2A6ECF7900114F84 /* ClockworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBA344D2A6ECF7900114F84 /* ClockworkTests.swift */; };
 		DDBA34582A6ECF7900114F84 /* ClockworkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBA34572A6ECF7900114F84 /* ClockworkUITests.swift */; };
 		DDBA345A2A6ECF7900114F84 /* ClockworkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBA34592A6ECF7900114F84 /* ClockworkUITestsLaunchTests.swift */; };
+		DDBA349E2A72C6A500114F84 /* Login1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBA349D2A72C6A500114F84 /* Login1View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		DDBA34532A6ECF7900114F84 /* ClockworkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClockworkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDBA34572A6ECF7900114F84 /* ClockworkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockworkUITests.swift; sourceTree = "<group>"; };
 		DDBA34592A6ECF7900114F84 /* ClockworkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockworkUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DDBA349D2A72C6A500114F84 /* Login1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login1View.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				DDBA343F2A6ECF7900114F84 /* Assets.xcassets */,
 				DDBA34412A6ECF7900114F84 /* Clockwork.entitlements */,
 				DDBA34422A6ECF7900114F84 /* Preview Content */,
+				DDBA349D2A72C6A500114F84 /* Login1View.swift */,
 			);
 			path = Clockwork;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDBA343E2A6ECF7700114F84 /* ContentView.swift in Sources */,
+				DDBA349E2A72C6A500114F84 /* Login1View.swift in Sources */,
 				DDBA343C2A6ECF7700114F84 /* ClockworkApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
