@@ -14,8 +14,10 @@ struct RoutineStepCell: View {
         HStack {
             //put the checkbox here
             Toggle(isOn: $routineStep.isDone) {
-                        }
+            }
                         .toggleStyle(CheckboxToggleStyle())
+            
+            var _ = print("\(routineStep.isDone)")
             
             HStack {
                 VStack(alignment: .leading, spacing: 5) {
@@ -48,15 +50,17 @@ struct RoutineStepCell: View {
                 .cornerRadius(32)
                 .padding(.trailing, 10)
         }
-        .frame(width: 350, height: 100)
+        .frame(width: 250, height: 100)
         .padding(10)
+        .padding(.leading, 80)
+        .padding(.trailing, 60)
         
     }
 }
 
 struct RoutineStepCell_Previews: PreviewProvider {
     static var previews: some View {
-        RoutineStepCell(routineStep: MockData.sampleStep2)
+        RoutineStepCell(routineStep: MockData.sampleStep1)
     }
 }
 
@@ -73,6 +77,7 @@ struct CheckboxToggleStyle: ToggleStyle {
                 .onTapGesture {
                     withAnimation(.spring()) {
                         configuration.isOn.toggle()
+                    
                     }
                 }
             

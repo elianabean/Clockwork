@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct RoutineStep: Decodable, Identifiable {
+struct RoutineStep: Identifiable, Equatable, Codable {
     let id: Int
     let name: String
     let description: String
@@ -22,7 +22,7 @@ struct MockData {
         name: "Brush Teeth",
         description: "Brush teeth for 3 minutes or else your teeth will grow cavities",
         imageURL: "",
-        isDone: false)
+        isDone: true)
     
     static let sampleStep2 = RoutineStep(
         id: 002,
@@ -45,5 +45,13 @@ struct MockData {
         imageURL: "",
         isDone: false)
     
-    static let steps = [sampleStep1, sampleStep2, sampleStep3, sampleStep4]
+    static let sampleStep5 = RoutineStep(
+        id: 005,
+        name: "Go to Sleep",
+        description: "yes",
+        imageURL: "",
+        isDone: false)
+    
+    static let steps = [sampleStep1, sampleStep2, sampleStep3, sampleStep4, sampleStep5]
 }
+

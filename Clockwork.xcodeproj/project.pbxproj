@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		DD8645D42AD46B0800AE4D0F /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8645D32AD46B0800AE4D0F /* DashboardView.swift */; };
 		DDA617F62AE1ED93009C4EFA /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA617F52AE1ED93009C4EFA /* AccountView.swift */; };
-		DDA617FA2AE1EECB009C4EFA /* RoutinesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA617F92AE1EECB009C4EFA /* RoutinesView.swift */; };
 		DDA617FC2AE1F2C4009C4EFA /* RoutineStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA617FB2AE1F2C4009C4EFA /* RoutineStep.swift */; };
 		DDA617FE2AE1F531009C4EFA /* RoutineStepCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA617FD2AE1F531009C4EFA /* RoutineStepCell.swift */; };
-		DDBA343C2A6ECF7700114F84 /* ClockworkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBA343B2A6ECF7700114F84 /* ClockworkApp.swift */; };
+		DDA618002AECB22B009C4EFA /* ClockworkTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA617FF2AECB22B009C4EFA /* ClockworkTabView.swift */; };
+		DDA618022AECB31E009C4EFA /* MorningRoutineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA618012AECB31E009C4EFA /* MorningRoutineView.swift */; };
+		DDA618042AECB34C009C4EFA /* NightRoutineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA618032AECB34C009C4EFA /* NightRoutineView.swift */; };
 		DDBA343E2A6ECF7700114F84 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBA343D2A6ECF7700114F84 /* ContentView.swift */; };
 		DDBA34402A6ECF7900114F84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDBA343F2A6ECF7900114F84 /* Assets.xcassets */; };
 		DDBA34442A6ECF7900114F84 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDBA34432A6ECF7900114F84 /* Preview Assets.xcassets */; };
@@ -42,11 +43,12 @@
 /* Begin PBXFileReference section */
 		DD8645D32AD46B0800AE4D0F /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		DDA617F52AE1ED93009C4EFA /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
-		DDA617F92AE1EECB009C4EFA /* RoutinesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutinesView.swift; sourceTree = "<group>"; };
 		DDA617FB2AE1F2C4009C4EFA /* RoutineStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineStep.swift; sourceTree = "<group>"; };
 		DDA617FD2AE1F531009C4EFA /* RoutineStepCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineStepCell.swift; sourceTree = "<group>"; };
+		DDA617FF2AECB22B009C4EFA /* ClockworkTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockworkTabView.swift; sourceTree = "<group>"; };
+		DDA618012AECB31E009C4EFA /* MorningRoutineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorningRoutineView.swift; sourceTree = "<group>"; };
+		DDA618032AECB34C009C4EFA /* NightRoutineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NightRoutineView.swift; sourceTree = "<group>"; };
 		DDBA34382A6ECF7700114F84 /* Clockwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clockwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DDBA343B2A6ECF7700114F84 /* ClockworkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockworkApp.swift; sourceTree = "<group>"; };
 		DDBA343D2A6ECF7700114F84 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DDBA343F2A6ECF7900114F84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DDBA34412A6ECF7900114F84 /* Clockwork.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Clockwork.entitlements; sourceTree = "<group>"; };
@@ -107,7 +109,7 @@
 		DDBA343A2A6ECF7700114F84 /* Clockwork */ = {
 			isa = PBXGroup;
 			children = (
-				DDBA343B2A6ECF7700114F84 /* ClockworkApp.swift */,
+				DDA617FF2AECB22B009C4EFA /* ClockworkTabView.swift */,
 				DDBA343D2A6ECF7700114F84 /* ContentView.swift */,
 				DDBA343F2A6ECF7900114F84 /* Assets.xcassets */,
 				DDBA34412A6ECF7900114F84 /* Clockwork.entitlements */,
@@ -115,7 +117,8 @@
 				DDBA349D2A72C6A500114F84 /* Login1View.swift */,
 				DDA617F52AE1ED93009C4EFA /* AccountView.swift */,
 				DD8645D32AD46B0800AE4D0F /* DashboardView.swift */,
-				DDA617F92AE1EECB009C4EFA /* RoutinesView.swift */,
+				DDA618012AECB31E009C4EFA /* MorningRoutineView.swift */,
+				DDA618032AECB34C009C4EFA /* NightRoutineView.swift */,
 				DDA617FD2AE1F531009C4EFA /* RoutineStepCell.swift */,
 				DDA617FB2AE1F2C4009C4EFA /* RoutineStep.swift */,
 			);
@@ -278,12 +281,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDBA343E2A6ECF7700114F84 /* ContentView.swift in Sources */,
-				DDA617FA2AE1EECB009C4EFA /* RoutinesView.swift in Sources */,
 				DDA617FE2AE1F531009C4EFA /* RoutineStepCell.swift in Sources */,
+				DDA618042AECB34C009C4EFA /* NightRoutineView.swift in Sources */,
 				DD8645D42AD46B0800AE4D0F /* DashboardView.swift in Sources */,
 				DDBA349E2A72C6A500114F84 /* Login1View.swift in Sources */,
 				DDA617FC2AE1F2C4009C4EFA /* RoutineStep.swift in Sources */,
-				DDBA343C2A6ECF7700114F84 /* ClockworkApp.swift in Sources */,
+				DDA618002AECB22B009C4EFA /* ClockworkTabView.swift in Sources */,
+				DDA618022AECB31E009C4EFA /* MorningRoutineView.swift in Sources */,
 				DDA617F62AE1ED93009C4EFA /* AccountView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
