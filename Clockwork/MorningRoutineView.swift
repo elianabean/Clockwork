@@ -10,14 +10,39 @@ import SwiftUI
 
 struct MorningRoutineView: View {
     /*
-    @State var numDone = MockData.steps.filter { (step : RoutineStep) -> Bool in
-        return step.isDone
-    }.count
+    @State var sampleSteps = [
+        RoutineStep(
+            name: "Brush Teeth",
+            description: "Brush teeth for 3 minutes or else your teeth will grow cavities",
+            imageURL: "",
+            isDone: true),
+        RoutineStep(
+            name: "Brush Hair",
+            description: "yes",
+            imageURL: "",
+            isDone: true),
+        RoutineStep(
+            name: "Use Lotion",
+            description: "yes",
+            imageURL: "",
+            isDone: false),
+        RoutineStep(
+            name: "Set Alarm",
+            description: "yes",
+            imageURL: "",
+            isDone: false),
+        RoutineStep(
+            name: "Go to Sleep",
+            description: "yes",
+            imageURL: "",
+            isDone: false)
+    ]
      */
+    
+    @EnvironmentObject private var vm: RoutineStepViewModel
     
     
     var body: some View {
-       //@State var _ = print("bruh\(numDone)")
         
         
        NavigationView {
@@ -37,14 +62,48 @@ struct MorningRoutineView: View {
                             
                         }
                         
-                        
                         VStack {
                             HStack {
+                                VStack {
+                                    HStack {
+                                        Image(systemName: "flame.fill")
+                                        Text("My Progress")
+                                            .lineLimit(1)
+                                    }
+                                    .frame(maxWidth: .infinity, alignment: .leading)
+                                    .padding(.leading, 20)
+                                    
+                                    
+                                    Divider()
+                                        .frame(width: 180, height: 2.5)
+                                        .overlay(.black)
+                                        .padding(.leading, 20)
+                                        .frame(maxWidth: .infinity, alignment: .leading)
+                                    
+                                    
+                                } //VStack
                                 
-                                ProgressBar(value: Double(MockData.steps.filter { $0.isDone }.count) / Double(MockData.steps.count))
-                                               .frame(width: 300, height: 20)
-                                               .padding()
-                                
+                                Spacer()
+                            }
+                            .padding(.bottom, 10)
+
+                            
+                            HStack {
+                                Spacer()
+                                ProgressBar(percent: CGFloat(vm.routineSteps.filter { $0.isDone }.count) / CGFloat(vm.routineSteps.count))
+                                               .animation(.spring())
+                            
+                                Spacer()
+                            }
+                        } //VStack
+                        
+                        
+                        .padding(.top, 20)
+                        .frame(width: geo.size.width, alignment: .leading)
+                        
+                        VStack {
+                            
+                            HStack {
                                 Image(systemName: "sun.max.fill")
                                 Text("My Morning Routine")
                                     .lineLimit(1)
@@ -53,29 +112,31 @@ struct MorningRoutineView: View {
                                 .frame(width: 180, height: 2.5)
                                 .overlay(.black)
                                 
-                        }
+                        } //VStack
                         .padding(.leading, 20)
                         .padding(.top, 20)
                         .frame(width: geo.size.width, alignment: .leading)
                         
+                        Spacer()
                         
-                        NavigationView {
-                            List(MockData.steps) { sampleStep in
-                                RoutineStepCell(routineStep: sampleStep)
-                            }
-                             .listStyle(PlainListStyle())
-                            /*
-                             .onChange(of: MockData.steps, perform: { value in
-                                         for step in MockData.steps where step.isDone {
-                                             counter.update()
-                                             break
-                                         }
-                                     })
-                             */
-                            
+                        VStack(alignment: .leading) {
+                            routineStepCells
+                            Spacer()
                         }
-                        .frame(maxHeight: geo.size.height)
+                        .sheet(isPresented: $vm.showCreateStepSheet) {
+                            RoutineStepCreationView()
+                        }
                         
+                        Button {
+                            vm.showCreateStepSheet.toggle()
+                        } label: {
+                            Image(systemName: "plus")
+                                .font(.headline)
+                                .cornerRadius(10)
+                                .background(.gray)
+                                .shadow(radius: 4)
+                                .padding()
+                        }
                     }
                 }
                 
@@ -88,28 +149,52 @@ struct MorningRoutineView: View {
 }
 
 struct ProgressBar: View {
-    var value: Double
-
+    var width: CGFloat = 300
+    var percent: CGFloat = 10
+    
     var body: some View {
-        GeometryReader { geometry in
-            ZStack(alignment: .leading) {
-                Rectangle()
-                    .frame(width: geometry.size.width, height: geometry.size.height)
-                    .opacity(0.3)
-                    .foregroundColor(Color.gray)
-
-                Rectangle()
-                    .frame(width: min(CGFloat(self.value) * geometry.size.width, geometry.size.width), height: geometry.size.height)
-                    .foregroundColor(Color.blue)
-                    
-            }
+        ZStack(alignment: .leading) {
+            let multiplier = width
+            RoundedRectangle(cornerRadius: 20, style: .continuous)
+                .frame(width: multiplier, height: 20)
+                .foregroundColor(Color.black.opacity(0.1))
+            
+            RoundedRectangle(cornerRadius: 20, style: .continuous)
+                .frame(width: percent * multiplier, height: 20)
+                .background(
+                    LinearGradient(gradient: Gradient(colors: [Color.red, Color.blue]), startPoint: .leading, endPoint: .trailing)
+                        .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
+                )
+            
+                .foregroundColor(.clear)
+            
         }
+        
     }
 }
 
 struct MorningRoutineView_Previews: PreviewProvider {
     static var previews: some View {
         MorningRoutineView()
+            .environmentObject(RoutineStepViewModel())
         
+    }
+}
+
+extension MorningRoutineView {
+    
+    var routineStepCells: some View {
+        ScrollView {
+            VStack(spacing: 5) {
+                ForEach(vm.routineSteps) { routineStep in
+                    RoutineStepRowView(routineStep: routineStep)
+                        .padding(.horizontal, 45)
+                    
+                }
+                .onDelete { indexSet in
+                    vm.routineSteps.remove(atOffsets: indexSet)
+                }
+            }
+        }
     }
 }

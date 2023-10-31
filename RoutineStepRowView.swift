@@ -1,23 +1,31 @@
 //
-//  RoutineStepCell.swift
+//  RoutineStepRowView.swift
 //  Clockwork
 //
-//  Created by Eliana Wang on 10/19/23.
+//  Created by Eliana Wang on 10/30/23.
 //
 
 import SwiftUI
 
-struct RoutineStepCell: View {
+struct RoutineStepRowView: View {
+    @EnvironmentObject private var vm: RoutineStepViewModel
+    
     @State var routineStep: RoutineStep
+    
+    @State private var isOn : Bool = false
+    @State private var test = false
     
     var body: some View {
         HStack {
-            //put the checkbox here
-            Toggle(isOn: $routineStep.isDone) {
-            }
-                        .toggleStyle(CheckboxToggleStyle())
             
-            var _ = print("\(routineStep.isDone)")
+            Toggle(isOn: $test) {
+            }
+            .toggleStyle( CheckboxToggleStyle(routineStep: routineStep))
+                .onChange(of: test) { _ in
+                    
+                    vm.updateIsDone(routineStep: routineStep)
+            }
+                
             
             HStack {
                 VStack(alignment: .leading, spacing: 5) {
@@ -51,27 +59,35 @@ struct RoutineStepCell: View {
                 .padding(.trailing, 10)
         }
         .frame(width: 250, height: 100)
-        .padding(10)
-        .padding(.leading, 80)
-        .padding(.trailing, 60)
-        
     }
 }
 
-struct RoutineStepCell_Previews: PreviewProvider {
+struct RoutineStepRowView_Previews: PreviewProvider {
+    
+    
+    
     static var previews: some View {
-        RoutineStepCell(routineStep: MockData.sampleStep1)
+        
+        RoutineStepRowView(routineStep: RoutineStep(
+            name: "Go to Sleep",
+            description: "yes",
+            imageURL: "",
+            isDone: false))
     }
+}
+
+extension RoutineStepRowView {
+    
 }
 
 //CheckboxToggleStyle from https://www.appcoda.com/swiftui-checkbox/
 
 struct CheckboxToggleStyle: ToggleStyle {
-    
+    @State var routineStep: RoutineStep
     
     func makeBody(configuration: Configuration) -> some View {
         HStack {
-            Image(systemName: configuration.isOn ? "checkmark.square.fill" : "square")
+            Image(systemName: routineStep.isDone ? "checkmark.square.fill" : "square")
                 .resizable()
                 .frame(width: 40, height: 40)
                 .onTapGesture {

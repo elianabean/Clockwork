@@ -42,7 +42,7 @@ struct NightRoutineView: View {
                         .padding(.top, 20)
                         .frame(width: geo.size.width, alignment: .leading)
                         
-                        
+                        /*
                         NavigationView {
                             List(MockData.steps) { sampleStep in
                                 RoutineStepCell(routineStep: sampleStep)
@@ -52,6 +52,7 @@ struct NightRoutineView: View {
                         }
                         
                         .frame(maxHeight: geo.size.height)
+                         */
                         
                     }
                     
