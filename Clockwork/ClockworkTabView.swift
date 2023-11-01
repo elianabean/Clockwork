@@ -29,11 +29,13 @@ struct ClockworkTabView: View {
                     Text("Routine")
                 }
             
+            /*
             AccountView()
                 .tabItem {
                     Image(systemName: "person")
                     Text("Account")
                 }
+             */
         }
         .accentColor(Color("SummerSkyBlue"))
         

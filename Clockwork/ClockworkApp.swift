@@ -4,6 +4,7 @@
 //
 //  Created by Eliana Wang on 10/30/23.
 //
+// Mountains Image from https://pixabay.com/photos/rough-horn-alpine-2146181/
 
 import SwiftUI
 
@@ -11,15 +12,6 @@ import SwiftUI
 struct ClockworkApp: App {
     
     @StateObject private var routineStepViewModel = RoutineStepViewModel()
-    
-    init(){
-        for family in UIFont.familyNames {
-             print(family)
-             for names in UIFont.fontNames(forFamilyName: family){
-             print("== \(names)")
-             }
-        }
-    }
     
     var body: some Scene {
         WindowGroup {
