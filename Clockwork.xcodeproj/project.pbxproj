@@ -11,7 +11,64 @@
 		DDA4B31B2AF0779700B6E9C0 /* ClockworkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA4B31A2AF0779700B6E9C0 /* ClockworkApp.swift */; };
 		DDA4B31D2AF08AF500B6E9C0 /* RoutineStepCreationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA4B31C2AF08AF500B6E9C0 /* RoutineStepCreationView.swift */; };
 		DDA4B31F2AF090F700B6E9C0 /* RoutineStepRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA4B31E2AF090F700B6E9C0 /* RoutineStepRowView.swift */; };
-		DDA4B3212AF2AF7000B6E9C0 /* Login2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA4B3202AF2AF7000B6E9C0 /* Login2.swift */; };
+		DDA4B3232AF2AFD100B6E9C0 /* Login2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA4B3222AF2AFD100B6E9C0 /* Login2View.swift */; };
+		DDA4B33D2AF2C06300B6E9C0 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDA4B32D2AF2C06200B6E9C0 /* Lato-Regular.ttf */; };
+		DDA4B33E2AF2C06300B6E9C0 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDA4B32D2AF2C06200B6E9C0 /* Lato-Regular.ttf */; };
+		DDA4B33F2AF2C06300B6E9C0 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDA4B32D2AF2C06200B6E9C0 /* Lato-Regular.ttf */; };
+		DDA4B3432AF2C06300B6E9C0 /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDA4B32F2AF2C06300B6E9C0 /* Lato-Light.ttf */; };
+		DDA4B3442AF2C06300B6E9C0 /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDA4B32F2AF2C06300B6E9C0 /* Lato-Light.ttf */; };
+		DDA4B3452AF2C06300B6E9C0 /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDA4B32F2AF2C06300B6E9C0 /* Lato-Light.ttf */; };
+		DDA4B3462AF2C06300B6E9C0 /* Lato-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDA4B3302AF2C06300B6E9C0 /* Lato-Thin.ttf */; };
+		DDA4B3472AF2C06300B6E9C0 /* Lato-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDA4B3302AF2C06300B6E9C0 /* Lato-Thin.ttf */; };
+		DDA4B3482AF2C06300B6E9C0 /* Lato-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDA4B3302AF2C06300B6E9C0 /* Lato-Thin.ttf */; };
+		DDA4B3492AF2C06300B6E9C0 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDA4B3312AF2C06300B6E9C0 /* Lato-Bold.ttf */; };
+		DDA4B34A2AF2C06300B6E9C0 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDA4B3312AF2C06300B6E9C0 /* Lato-Bold.ttf */; };
+		DDA4B34B2AF2C06300B6E9C0 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDA4B3312AF2C06300B6E9C0 /* Lato-Bold.ttf */; };
+		DDA4B34F2AF2C06300B6E9C0 /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDA4B3332AF2C06300B6E9C0 /* Lato-Black.ttf */; };
+		DDA4B3502AF2C06300B6E9C0 /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDA4B3332AF2C06300B6E9C0 /* Lato-Black.ttf */; };
+		DDA4B3512AF2C06300B6E9C0 /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDA4B3332AF2C06300B6E9C0 /* Lato-Black.ttf */; };
+		DDA4B3712AF2C7FF00B6E9C0 /* BarlowCondensed-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDA4B36A2AF2C7FE00B6E9C0 /* BarlowCondensed-Black.ttf */; };
+		DDA4B3722AF2C7FF00B6E9C0 /* BarlowCondensed-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDA4B36A2AF2C7FE00B6E9C0 /* BarlowCondensed-Black.ttf */; };
+		DDA4B3732AF2C7FF00B6E9C0 /* BarlowCondensed-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDA4B36A2AF2C7FE00B6E9C0 /* BarlowCondensed-Black.ttf */; };
+		DDA4B3742AF2C7FF00B6E9C0 /* BarlowCondensed-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDA4B36B2AF2C7FE00B6E9C0 /* BarlowCondensed-Bold.ttf */; };
+		DDA4B3752AF2C7FF00B6E9C0 /* BarlowCondensed-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDA4B36B2AF2C7FE00B6E9C0 /* BarlowCondensed-Bold.ttf */; };
+		DDA4B3762AF2C7FF00B6E9C0 /* BarlowCondensed-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDA4B36B2AF2C7FE00B6E9C0 /* BarlowCondensed-Bold.ttf */; };
+		DDA4B3772AF2C7FF00B6E9C0 /* BarlowCondensed-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDA4B36C2AF2C7FE00B6E9C0 /* BarlowCondensed-SemiBold.ttf */; };
+		DDA4B3782AF2C7FF00B6E9C0 /* BarlowCondensed-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDA4B36C2AF2C7FE00B6E9C0 /* BarlowCondensed-SemiBold.ttf */; };
+		DDA4B3792AF2C7FF00B6E9C0 /* BarlowCondensed-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDA4B36C2AF2C7FE00B6E9C0 /* BarlowCondensed-SemiBold.ttf */; };
+		DDA4B37A2AF2C7FF00B6E9C0 /* BarlowCondensed-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDA4B36D2AF2C7FE00B6E9C0 /* BarlowCondensed-Medium.ttf */; };
+		DDA4B37B2AF2C7FF00B6E9C0 /* BarlowCondensed-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDA4B36D2AF2C7FE00B6E9C0 /* BarlowCondensed-Medium.ttf */; };
+		DDA4B37C2AF2C7FF00B6E9C0 /* BarlowCondensed-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDA4B36D2AF2C7FE00B6E9C0 /* BarlowCondensed-Medium.ttf */; };
+		DDA4B37D2AF2C7FF00B6E9C0 /* BarlowCondensed-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDA4B36E2AF2C7FE00B6E9C0 /* BarlowCondensed-Light.ttf */; };
+		DDA4B37E2AF2C7FF00B6E9C0 /* BarlowCondensed-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDA4B36E2AF2C7FE00B6E9C0 /* BarlowCondensed-Light.ttf */; };
+		DDA4B37F2AF2C7FF00B6E9C0 /* BarlowCondensed-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDA4B36E2AF2C7FE00B6E9C0 /* BarlowCondensed-Light.ttf */; };
+		DDA4B3802AF2C7FF00B6E9C0 /* BarlowCondensed-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDA4B36F2AF2C7FE00B6E9C0 /* BarlowCondensed-Thin.ttf */; };
+		DDA4B3812AF2C7FF00B6E9C0 /* BarlowCondensed-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDA4B36F2AF2C7FE00B6E9C0 /* BarlowCondensed-Thin.ttf */; };
+		DDA4B3822AF2C7FF00B6E9C0 /* BarlowCondensed-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDA4B36F2AF2C7FE00B6E9C0 /* BarlowCondensed-Thin.ttf */; };
+		DDA4B3832AF2C7FF00B6E9C0 /* BarlowCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDA4B3702AF2C7FF00B6E9C0 /* BarlowCondensed-Regular.ttf */; };
+		DDA4B3842AF2C7FF00B6E9C0 /* BarlowCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDA4B3702AF2C7FF00B6E9C0 /* BarlowCondensed-Regular.ttf */; };
+		DDA4B3852AF2C7FF00B6E9C0 /* BarlowCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDA4B3702AF2C7FF00B6E9C0 /* BarlowCondensed-Regular.ttf */; };
+		DDA4B38D2AF2D1D200B6E9C0 /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDA4B3862AF2D1CD00B6E9C0 /* Montserrat-Black.ttf */; };
+		DDA4B38E2AF2D1D200B6E9C0 /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDA4B3862AF2D1CD00B6E9C0 /* Montserrat-Black.ttf */; };
+		DDA4B38F2AF2D1D200B6E9C0 /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDA4B3862AF2D1CD00B6E9C0 /* Montserrat-Black.ttf */; };
+		DDA4B3902AF2D1D200B6E9C0 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDA4B3872AF2D1CD00B6E9C0 /* Montserrat-Medium.ttf */; };
+		DDA4B3912AF2D1D200B6E9C0 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDA4B3872AF2D1CD00B6E9C0 /* Montserrat-Medium.ttf */; };
+		DDA4B3922AF2D1D200B6E9C0 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDA4B3872AF2D1CD00B6E9C0 /* Montserrat-Medium.ttf */; };
+		DDA4B3932AF2D1D200B6E9C0 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDA4B3882AF2D1CD00B6E9C0 /* Montserrat-Bold.ttf */; };
+		DDA4B3942AF2D1D200B6E9C0 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDA4B3882AF2D1CD00B6E9C0 /* Montserrat-Bold.ttf */; };
+		DDA4B3952AF2D1D200B6E9C0 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDA4B3882AF2D1CD00B6E9C0 /* Montserrat-Bold.ttf */; };
+		DDA4B3962AF2D1D200B6E9C0 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDA4B3892AF2D1CD00B6E9C0 /* Montserrat-Regular.ttf */; };
+		DDA4B3972AF2D1D200B6E9C0 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDA4B3892AF2D1CD00B6E9C0 /* Montserrat-Regular.ttf */; };
+		DDA4B3982AF2D1D200B6E9C0 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDA4B3892AF2D1CD00B6E9C0 /* Montserrat-Regular.ttf */; };
+		DDA4B3992AF2D1D200B6E9C0 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDA4B38A2AF2D1CF00B6E9C0 /* Montserrat-Light.ttf */; };
+		DDA4B39A2AF2D1D200B6E9C0 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDA4B38A2AF2D1CF00B6E9C0 /* Montserrat-Light.ttf */; };
+		DDA4B39B2AF2D1D200B6E9C0 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDA4B38A2AF2D1CF00B6E9C0 /* Montserrat-Light.ttf */; };
+		DDA4B39C2AF2D1D200B6E9C0 /* Montserrat-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDA4B38B2AF2D1CF00B6E9C0 /* Montserrat-Thin.ttf */; };
+		DDA4B39D2AF2D1D200B6E9C0 /* Montserrat-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDA4B38B2AF2D1CF00B6E9C0 /* Montserrat-Thin.ttf */; };
+		DDA4B39E2AF2D1D300B6E9C0 /* Montserrat-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDA4B38B2AF2D1CF00B6E9C0 /* Montserrat-Thin.ttf */; };
+		DDA4B39F2AF2D1D300B6E9C0 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDA4B38C2AF2D1D200B6E9C0 /* Montserrat-SemiBold.ttf */; };
+		DDA4B3A02AF2D1D300B6E9C0 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDA4B38C2AF2D1D200B6E9C0 /* Montserrat-SemiBold.ttf */; };
+		DDA4B3A12AF2D1D300B6E9C0 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDA4B38C2AF2D1D200B6E9C0 /* Montserrat-SemiBold.ttf */; };
 		DDA617F62AE1ED93009C4EFA /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA617F52AE1ED93009C4EFA /* AccountView.swift */; };
 		DDA617FC2AE1F2C4009C4EFA /* RoutineStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA617FB2AE1F2C4009C4EFA /* RoutineStep.swift */; };
 		DDA618002AECB22B009C4EFA /* ClockworkTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA617FF2AECB22B009C4EFA /* ClockworkTabView.swift */; };
@@ -48,7 +105,27 @@
 		DDA4B31A2AF0779700B6E9C0 /* ClockworkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockworkApp.swift; sourceTree = "<group>"; };
 		DDA4B31C2AF08AF500B6E9C0 /* RoutineStepCreationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineStepCreationView.swift; sourceTree = "<group>"; };
 		DDA4B31E2AF090F700B6E9C0 /* RoutineStepRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineStepRowView.swift; sourceTree = "<group>"; };
-		DDA4B3202AF2AF7000B6E9C0 /* Login2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login2.swift; sourceTree = "<group>"; };
+		DDA4B3222AF2AFD100B6E9C0 /* Login2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login2View.swift; sourceTree = "<group>"; };
+		DDA4B3282AF2BEEF00B6E9C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DDA4B32D2AF2C06200B6E9C0 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
+		DDA4B32F2AF2C06300B6E9C0 /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Light.ttf"; sourceTree = "<group>"; };
+		DDA4B3302AF2C06300B6E9C0 /* Lato-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Thin.ttf"; sourceTree = "<group>"; };
+		DDA4B3312AF2C06300B6E9C0 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
+		DDA4B3332AF2C06300B6E9C0 /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Black.ttf"; sourceTree = "<group>"; };
+		DDA4B36A2AF2C7FE00B6E9C0 /* BarlowCondensed-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BarlowCondensed-Black.ttf"; sourceTree = "<group>"; };
+		DDA4B36B2AF2C7FE00B6E9C0 /* BarlowCondensed-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BarlowCondensed-Bold.ttf"; sourceTree = "<group>"; };
+		DDA4B36C2AF2C7FE00B6E9C0 /* BarlowCondensed-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BarlowCondensed-SemiBold.ttf"; sourceTree = "<group>"; };
+		DDA4B36D2AF2C7FE00B6E9C0 /* BarlowCondensed-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BarlowCondensed-Medium.ttf"; sourceTree = "<group>"; };
+		DDA4B36E2AF2C7FE00B6E9C0 /* BarlowCondensed-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BarlowCondensed-Light.ttf"; sourceTree = "<group>"; };
+		DDA4B36F2AF2C7FE00B6E9C0 /* BarlowCondensed-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BarlowCondensed-Thin.ttf"; sourceTree = "<group>"; };
+		DDA4B3702AF2C7FF00B6E9C0 /* BarlowCondensed-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BarlowCondensed-Regular.ttf"; sourceTree = "<group>"; };
+		DDA4B3862AF2D1CD00B6E9C0 /* Montserrat-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Black.ttf"; sourceTree = "<group>"; };
+		DDA4B3872AF2D1CD00B6E9C0 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		DDA4B3882AF2D1CD00B6E9C0 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		DDA4B3892AF2D1CD00B6E9C0 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		DDA4B38A2AF2D1CF00B6E9C0 /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
+		DDA4B38B2AF2D1CF00B6E9C0 /* Montserrat-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Thin.ttf"; sourceTree = "<group>"; };
+		DDA4B38C2AF2D1D200B6E9C0 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
 		DDA617F52AE1ED93009C4EFA /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		DDA617FB2AE1F2C4009C4EFA /* RoutineStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineStep.swift; sourceTree = "<group>"; };
 		DDA617FF2AECB22B009C4EFA /* ClockworkTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockworkTabView.swift; sourceTree = "<group>"; };
@@ -116,6 +193,26 @@
 		DDBA343A2A6ECF7700114F84 /* Clockwork */ = {
 			isa = PBXGroup;
 			children = (
+				DDA4B32D2AF2C06200B6E9C0 /* Lato-Regular.ttf */,
+				DDA4B3312AF2C06300B6E9C0 /* Lato-Bold.ttf */,
+				DDA4B32F2AF2C06300B6E9C0 /* Lato-Light.ttf */,
+				DDA4B3302AF2C06300B6E9C0 /* Lato-Thin.ttf */,
+				DDA4B3332AF2C06300B6E9C0 /* Lato-Black.ttf */,
+				DDA4B36A2AF2C7FE00B6E9C0 /* BarlowCondensed-Black.ttf */,
+				DDA4B36B2AF2C7FE00B6E9C0 /* BarlowCondensed-Bold.ttf */,
+				DDA4B36E2AF2C7FE00B6E9C0 /* BarlowCondensed-Light.ttf */,
+				DDA4B36D2AF2C7FE00B6E9C0 /* BarlowCondensed-Medium.ttf */,
+				DDA4B3702AF2C7FF00B6E9C0 /* BarlowCondensed-Regular.ttf */,
+				DDA4B36C2AF2C7FE00B6E9C0 /* BarlowCondensed-SemiBold.ttf */,
+				DDA4B36F2AF2C7FE00B6E9C0 /* BarlowCondensed-Thin.ttf */,
+				DDA4B3862AF2D1CD00B6E9C0 /* Montserrat-Black.ttf */,
+				DDA4B3882AF2D1CD00B6E9C0 /* Montserrat-Bold.ttf */,
+				DDA4B38A2AF2D1CF00B6E9C0 /* Montserrat-Light.ttf */,
+				DDA4B3872AF2D1CD00B6E9C0 /* Montserrat-Medium.ttf */,
+				DDA4B3892AF2D1CD00B6E9C0 /* Montserrat-Regular.ttf */,
+				DDA4B38C2AF2D1D200B6E9C0 /* Montserrat-SemiBold.ttf */,
+				DDA4B38B2AF2D1CF00B6E9C0 /* Montserrat-Thin.ttf */,
+				DDA4B3282AF2BEEF00B6E9C0 /* Info.plist */,
 				DDA4B31A2AF0779700B6E9C0 /* ClockworkApp.swift */,
 				DDA617FF2AECB22B009C4EFA /* ClockworkTabView.swift */,
 				DDBA343D2A6ECF7700114F84 /* ContentView.swift */,
@@ -123,10 +220,10 @@
 				DDBA34412A6ECF7900114F84 /* Clockwork.entitlements */,
 				DDBA34422A6ECF7900114F84 /* Preview Content */,
 				DDBA349D2A72C6A500114F84 /* Login1View.swift */,
-				DDA4B3202AF2AF7000B6E9C0 /* Login2.swift */,
 				DDA617F52AE1ED93009C4EFA /* AccountView.swift */,
 				DD8645D32AD46B0800AE4D0F /* DashboardView.swift */,
 				DDA618012AECB31E009C4EFA /* MorningRoutineView.swift */,
+				DDA4B3222AF2AFD100B6E9C0 /* Login2View.swift */,
 				DDA4B31C2AF08AF500B6E9C0 /* RoutineStepCreationView.swift */,
 				DDA618032AECB34C009C4EFA /* NightRoutineView.swift */,
 				DDA617FB2AE1F2C4009C4EFA /* RoutineStep.swift */,
@@ -263,7 +360,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDA4B3962AF2D1D200B6E9C0 /* Montserrat-Regular.ttf in Resources */,
+				DDA4B3832AF2C7FF00B6E9C0 /* BarlowCondensed-Regular.ttf in Resources */,
+				DDA4B3492AF2C06300B6E9C0 /* Lato-Bold.ttf in Resources */,
+				DDA4B39F2AF2D1D300B6E9C0 /* Montserrat-SemiBold.ttf in Resources */,
+				DDA4B3742AF2C7FF00B6E9C0 /* BarlowCondensed-Bold.ttf in Resources */,
 				DDBA34442A6ECF7900114F84 /* Preview Assets.xcassets in Resources */,
+				DDA4B3432AF2C06300B6E9C0 /* Lato-Light.ttf in Resources */,
+				DDA4B33D2AF2C06300B6E9C0 /* Lato-Regular.ttf in Resources */,
+				DDA4B3802AF2C7FF00B6E9C0 /* BarlowCondensed-Thin.ttf in Resources */,
+				DDA4B3712AF2C7FF00B6E9C0 /* BarlowCondensed-Black.ttf in Resources */,
+				DDA4B3462AF2C06300B6E9C0 /* Lato-Thin.ttf in Resources */,
+				DDA4B39C2AF2D1D200B6E9C0 /* Montserrat-Thin.ttf in Resources */,
+				DDA4B3772AF2C7FF00B6E9C0 /* BarlowCondensed-SemiBold.ttf in Resources */,
+				DDA4B3932AF2D1D200B6E9C0 /* Montserrat-Bold.ttf in Resources */,
+				DDA4B34F2AF2C06300B6E9C0 /* Lato-Black.ttf in Resources */,
+				DDA4B38D2AF2D1D200B6E9C0 /* Montserrat-Black.ttf in Resources */,
+				DDA4B37D2AF2C7FF00B6E9C0 /* BarlowCondensed-Light.ttf in Resources */,
+				DDA4B37A2AF2C7FF00B6E9C0 /* BarlowCondensed-Medium.ttf in Resources */,
+				DDA4B3992AF2D1D200B6E9C0 /* Montserrat-Light.ttf in Resources */,
+				DDA4B3902AF2D1D200B6E9C0 /* Montserrat-Medium.ttf in Resources */,
 				DDBA34402A6ECF7900114F84 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +388,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDA4B3972AF2D1D200B6E9C0 /* Montserrat-Regular.ttf in Resources */,
+				DDA4B3842AF2C7FF00B6E9C0 /* BarlowCondensed-Regular.ttf in Resources */,
+				DDA4B39A2AF2D1D200B6E9C0 /* Montserrat-Light.ttf in Resources */,
+				DDA4B37E2AF2C7FF00B6E9C0 /* BarlowCondensed-Light.ttf in Resources */,
+				DDA4B3472AF2C06300B6E9C0 /* Lato-Thin.ttf in Resources */,
+				DDA4B3812AF2C7FF00B6E9C0 /* BarlowCondensed-Thin.ttf in Resources */,
+				DDA4B38E2AF2D1D200B6E9C0 /* Montserrat-Black.ttf in Resources */,
+				DDA4B3942AF2D1D200B6E9C0 /* Montserrat-Bold.ttf in Resources */,
+				DDA4B33E2AF2C06300B6E9C0 /* Lato-Regular.ttf in Resources */,
+				DDA4B3502AF2C06300B6E9C0 /* Lato-Black.ttf in Resources */,
+				DDA4B3A02AF2D1D300B6E9C0 /* Montserrat-SemiBold.ttf in Resources */,
+				DDA4B39D2AF2D1D200B6E9C0 /* Montserrat-Thin.ttf in Resources */,
+				DDA4B37B2AF2C7FF00B6E9C0 /* BarlowCondensed-Medium.ttf in Resources */,
+				DDA4B3722AF2C7FF00B6E9C0 /* BarlowCondensed-Black.ttf in Resources */,
+				DDA4B3782AF2C7FF00B6E9C0 /* BarlowCondensed-SemiBold.ttf in Resources */,
+				DDA4B3912AF2D1D200B6E9C0 /* Montserrat-Medium.ttf in Resources */,
+				DDA4B3752AF2C7FF00B6E9C0 /* BarlowCondensed-Bold.ttf in Resources */,
+				DDA4B34A2AF2C06300B6E9C0 /* Lato-Bold.ttf in Resources */,
+				DDA4B3442AF2C06300B6E9C0 /* Lato-Light.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +414,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDA4B3982AF2D1D200B6E9C0 /* Montserrat-Regular.ttf in Resources */,
+				DDA4B3852AF2C7FF00B6E9C0 /* BarlowCondensed-Regular.ttf in Resources */,
+				DDA4B39B2AF2D1D200B6E9C0 /* Montserrat-Light.ttf in Resources */,
+				DDA4B37F2AF2C7FF00B6E9C0 /* BarlowCondensed-Light.ttf in Resources */,
+				DDA4B3482AF2C06300B6E9C0 /* Lato-Thin.ttf in Resources */,
+				DDA4B3822AF2C7FF00B6E9C0 /* BarlowCondensed-Thin.ttf in Resources */,
+				DDA4B38F2AF2D1D200B6E9C0 /* Montserrat-Black.ttf in Resources */,
+				DDA4B3952AF2D1D200B6E9C0 /* Montserrat-Bold.ttf in Resources */,
+				DDA4B33F2AF2C06300B6E9C0 /* Lato-Regular.ttf in Resources */,
+				DDA4B3512AF2C06300B6E9C0 /* Lato-Black.ttf in Resources */,
+				DDA4B3A12AF2D1D300B6E9C0 /* Montserrat-SemiBold.ttf in Resources */,
+				DDA4B39E2AF2D1D300B6E9C0 /* Montserrat-Thin.ttf in Resources */,
+				DDA4B37C2AF2C7FF00B6E9C0 /* BarlowCondensed-Medium.ttf in Resources */,
+				DDA4B3732AF2C7FF00B6E9C0 /* BarlowCondensed-Black.ttf in Resources */,
+				DDA4B3792AF2C7FF00B6E9C0 /* BarlowCondensed-SemiBold.ttf in Resources */,
+				DDA4B3922AF2D1D200B6E9C0 /* Montserrat-Medium.ttf in Resources */,
+				DDA4B3762AF2C7FF00B6E9C0 /* BarlowCondensed-Bold.ttf in Resources */,
+				DDA4B34B2AF2C06300B6E9C0 /* Lato-Bold.ttf in Resources */,
+				DDA4B3452AF2C06300B6E9C0 /* Lato-Light.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,8 +448,8 @@
 				DDBA343E2A6ECF7700114F84 /* ContentView.swift in Sources */,
 				DDA618042AECB34C009C4EFA /* NightRoutineView.swift in Sources */,
 				DD8645D42AD46B0800AE4D0F /* DashboardView.swift in Sources */,
+				DDA4B3232AF2AFD100B6E9C0 /* Login2View.swift in Sources */,
 				DDBA349E2A72C6A500114F84 /* Login1View.swift in Sources */,
-				DDA4B3212AF2AF7000B6E9C0 /* Login2.swift in Sources */,
 				DDA617FC2AE1F2C4009C4EFA /* RoutineStep.swift in Sources */,
 				DDA618002AECB22B009C4EFA /* ClockworkTabView.swift in Sources */,
 				DDA618022AECB31E009C4EFA /* MorningRoutineView.swift in Sources */,
@@ -457,6 +611,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Clockwork/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Clockwork/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -495,6 +650,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Clockwork/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Clockwork/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;

@@ -10,79 +10,92 @@ import SwiftUI
 struct DashboardView: View {
     var body: some View {
         NavigationView {
-             GeometryReader { geo in
-                 VStack {
-                     VStack(spacing: 0) {
-                         ZStack {
-                             Image("mountain landscape")
-                                 .resizable()
-                                 .ignoresSafeArea()
-                                 .frame(width: geo.size.width, height: geo.size.height * 0.40, alignment: .center)
-                                 
-                             
-                             Text("**Clockwork**")
-                                 .font(.system(size: 60))
-                                 .foregroundColor(.white)
-                             
-                         }
-                         
-                         VStack {
-                             HStack {
-                                 VStack {
-                                     HStack {
-                                         Image(systemName: "bell.fill")
-                                         Text("Notifications")
-                                             .lineLimit(1)
-                                     } //HStack
-                                     .frame(maxWidth: .infinity, alignment: .leading)
-                                     .padding(.leading, 20)
-                                     .foregroundColor(.black.opacity(0.8))
-                                     
-                                     
-                                     Divider()
-                                         .frame(width: 140, height: 2.5)
-                                         .overlay(.black.opacity(0.7))
-                                         .padding(.leading, 20)
-                                         .frame(maxWidth: .infinity, alignment: .leading)
-                                     
-                                     
-                                 } //VStack
-                                 
-                             } //HStack
-                             .padding(.bottom, 0)
-                             
-                             
-                             ScrollView {
-                                 DayView()
-                                  
-                                 StreakView(days: 10)
-                                 
-                                 StreakView(days: 5)
-                                 
-                                 StreakView(days: 3)
-                                     .padding(.bottom, 10)
-                             }
-                             .frame(height: 215)
-                             //.background(.red)
+            GeometryReader { geo in
+                VStack {
+                    VStack(spacing: 0) {
+                        ZStack {
+                            Image("mountain landscape")
+                                .resizable()
+                                .ignoresSafeArea()
+                                .frame(width: geo.size.width, height: geo.size.height * 0.40, alignment: .center)
                             
-                             
-                            StartButtonView()
-                                 .padding(.top, 20)
-
-                         } //VStack
-                         .padding(.top, 20)
-                         .frame(width: geo.size.width, alignment: .leading)
-                         
-                     }
-                 }
-                 
-             }
-                 .frame(maxHeight: .infinity)
-                 .background(.white)
+                            
+                            Text("**Clockwork**")
+                                .font(.custom("Lato-Regular", size: 70))
+                                .foregroundColor(.white)
+                            
+                        }
+                        
+                        VStack {
+                            HStack {
+                                VStack {
+                                    HStack {
+                                        Image(systemName: "bell.fill")
+                                        Text("Notifications")
+                                            .font(.custom("Lato-Regular", size: 20))
+                                            .lineLimit(1)
+                                    } //HStack
+                                    .frame(maxWidth: .infinity, alignment: .leading)
+                                    .padding(.leading, 20)
+                                    .foregroundColor(.black.opacity(0.8))
+                                    
+                                    
+                                    Divider()
+                                        .frame(width: 140, height: 2.5)
+                                        .overlay(.black.opacity(0.7))
+                                        .padding(.leading, 20)
+                                        .frame(maxWidth: .infinity, alignment: .leading)
+                                    
+                                    
+                                } //VStack
+                                
+                            } //HStack
+                            .padding(.bottom, 0)
+                            
+                            
+                            ScrollView {
+                                DayView()
+                                
+                                StreakView(days: 10)
+                                
+                                StreakView(days: 5)
+                                
+                                StreakView(days: 3)
+                                    .padding(.bottom, 10)
+                            }
+                            .frame(height: 215)
+                            //.background(.red)
+                            
+                            
+                            NavigationLink(destination: MorningRoutineView().navigationBarBackButtonHidden(true)) {
+                                Text("Start Routine")
+                                    .frame(width: 150, height: 50)
+                                    
+                                    .font(.custom("Lato-Regular", size: 20))
+                                    .fontWeight(.bold)
+                                    .padding()
+                                    
+                                    .background(Color("PrimaryDarkBlue"))
+                                    .cornerRadius(30)
+                                    .foregroundColor(.white)
+                            }
+                            .buttonStyle(PlainButtonStyle())
+                            .padding(.top, 20)
+                            
+                            
+                        } //VStack
+                        .padding(.top, 20)
+                        .frame(width: geo.size.width, alignment: .leading)
+                        
+                    }
+                }
+                
+            }
+            .frame(maxHeight: .infinity)
+            .background(.white)
             
-                 }
+        }
         .padding(.bottom, 20)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 }
 
@@ -99,7 +112,7 @@ struct DayView: View {
             //1
             VStack{
                 Text("10/28")
-                    .font(.system(size:16,  weight:.medium,  design:.default))
+                    .font(.custom("Lato-Regular", size: 16))
                     .foregroundColor(.black.opacity(0.7))
                 
                 Image(systemName: "circle.fill")
@@ -112,7 +125,7 @@ struct DayView: View {
             //2
             VStack{
                 Text("10/29")
-                    .font(.system(size:16,  weight:.medium,  design:.default))
+                    .font(.custom("Lato-Regular", size: 16))
                     .foregroundColor(.black.opacity(0.7))
                 
                 Image(systemName: "circle.fill")
@@ -125,7 +138,7 @@ struct DayView: View {
             //3
             VStack{
                 Text("10/30")
-                    .font(.system(size:16,  weight:.medium,  design:.default))
+                    .font(.custom("Lato-Regular", size: 16))
                     .foregroundColor(.black.opacity(0.7))
                 
                 Image(systemName: "circle.fill")
@@ -138,7 +151,7 @@ struct DayView: View {
             //4
             VStack{
                 Text("10/31")
-                    .font(.system(size:16,  weight:.medium,  design:.default))
+                    .font(.custom("Lato-Regular", size: 16))
                     .foregroundColor(.black.opacity(0.7))
                 
                 Image(systemName: "circle.fill")
@@ -151,7 +164,7 @@ struct DayView: View {
             //5
             VStack{
                 Text("11/01")
-                    .font(.system(size:16,  weight:.medium,  design:.default))
+                    .font(.custom("Lato-Regular", size: 16))
                     .foregroundColor(.black.opacity(0.7))
                 
                 Image(systemName: "circle.fill")
@@ -201,7 +214,7 @@ struct StreakView: View {
                 .frame(width:40,height: 40)
             
             Text("\(days) Day Streak! Keep it up!")
-                .font(.system(size:20,  weight:.medium,  design:.default))
+                .font(.custom("Lato-Regular", size: 20))
                 .foregroundColor(.black.opacity(0.7))
             
             
@@ -227,24 +240,5 @@ struct StreakView: View {
              y: 5
            )
         )
-    }
-}
-
-struct StartButtonView: View {
-    var body: some View {
-        NavigationView {
-            NavigationLink(destination: MorningRoutineView()) {
-                Text("Start Routine")
-                    .frame(width: 150, height: 50)
-                    .fontWeight(.bold)
-                    .font(.system(size: 20))
-                    .padding()
-                    .background(Color("PrimaryDarkBlue"))
-                    .cornerRadius(30)
-                    .foregroundColor(.white)
-                
-            }
-        }
-        
     }
 }

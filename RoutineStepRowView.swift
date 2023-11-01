@@ -7,7 +7,11 @@
 
 import SwiftUI
 
+
+
 struct RoutineStepRowView: View {
+    
+    
     @EnvironmentObject private var vm: RoutineStepViewModel
     
     @State var routineStep: RoutineStep
@@ -27,17 +31,16 @@ struct RoutineStepRowView: View {
             }
                 
             
+            
             HStack {
                 VStack(alignment: .leading, spacing: 5) {
                     Text(routineStep.name)
-                        .font(.title2)
-                        .fontWeight(.medium)
+                        .font(.custom("Lato-Bold", size: 24))
                         .foregroundColor(.black.opacity(0.8))
                     
                     Text(routineStep.description)
+                        .font(.custom("Montserrat-Regular", size: 16))
                         .foregroundColor(.secondary)
-                        .fontWeight(.semibold)
-                        .font(.subheadline)
                     
                     
                 }
@@ -69,11 +72,15 @@ struct RoutineStepRowView_Previews: PreviewProvider {
     
     static var previews: some View {
         
+        
         RoutineStepRowView(routineStep: RoutineStep(
             name: "Go to Sleep",
             description: "yes",
             imageName: "toothbrush",
             isDone: false))
+         
+       
+        
     }
 }
 

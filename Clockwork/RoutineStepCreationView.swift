@@ -34,7 +34,7 @@ struct RoutineStepCreationView: View {
                     Spacer()
                     
                     Text("New Step")
-                        .font(.system(size: 40))
+                        .font(.custom("Lato-Regular", size: 40))
                         .fontWeight(.bold)
                         .foregroundColor(.white)
                         .shadow(radius: 5)
@@ -96,9 +96,8 @@ extension RoutineStepCreationView {
         } label: {
             /*Button design from https://www.appcoda.com/swiftui-buttons/ */
             Text("Create")
+                .font(.custom("Lato-Bold", size: 20))
                 .frame(width: 100, height: 25)
-                .fontWeight(.bold)
-                .font(.system(size: 20))
                 .padding()
                 .background(Color("PrimaryDarkBlue"))
                 .cornerRadius(40)

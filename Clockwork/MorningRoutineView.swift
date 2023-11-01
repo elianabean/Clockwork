@@ -33,7 +33,7 @@ struct MorningRoutineView: View {
                                 
                             
                             Text("**Clockwork**")
-                                .font(.system(size: 40))
+                                .font(.custom("Lato-Regular", size: 50))
                                 .foregroundColor(.white)
                             
                         }
@@ -44,6 +44,7 @@ struct MorningRoutineView: View {
                                     HStack {
                                         Image(systemName: "flame.fill")
                                         Text("My Progress")
+                                            .font(.custom("Lato-Regular", size: 20))
                                             .lineLimit(1)
                                     }
                                     .frame(maxWidth: .infinity, alignment: .leading)
@@ -52,7 +53,7 @@ struct MorningRoutineView: View {
                                     
                                     
                                     Divider()
-                                        .frame(width: 180, height: 2.5)
+                                        .frame(width: 200, height: 2.5)
                                         .overlay(.black.opacity(0.7))
                                         .padding(.leading, 20)
                                         .frame(maxWidth: .infinity, alignment: .leading)
@@ -83,11 +84,12 @@ struct MorningRoutineView: View {
                             HStack {
                                 Image(systemName: "sun.max.fill")
                                 Text("My Morning Routine")
+                                    .font(.custom("Lato-Regular", size: 20))
                                     .lineLimit(1)
                                     .foregroundColor(.black.opacity(0.8))
                             }
                             Divider()
-                                .frame(width: 180, height: 2.5)
+                                .frame(width: 200, height: 2.5)
                                 .overlay(.black.opacity(0.8))
                                 
                         } //VStack
@@ -110,8 +112,7 @@ struct MorningRoutineView: View {
                         } label: {
                             /*Button design from https://www.appcoda.com/swiftui-buttons/ */
                             Text("New Step")
-                                .fontWeight(.bold)
-                                .font(.system(size: 20))
+                                .font(.custom("Lato-Bold", size: 20))
                                 .padding()
                                 .background(Color("PrimaryDarkBlue"))
                                 .cornerRadius(40)
@@ -127,7 +128,6 @@ struct MorningRoutineView: View {
            
                 }
        .padding(.bottom, 20)
-       .frame(maxWidth: .infinity, maxHeight: .infinity)
         
         
     }
