@@ -18,6 +18,8 @@ struct MorningRoutineView: View {
     
     @State var items = ["Item 1", "Item 2", "Item 3"]
     
+    @State private var isShowingDetail = false
+    
     var body: some View {
         
         
@@ -174,9 +176,10 @@ extension MorningRoutineView {
             VStack(spacing: 5) {
                 List {
                     ForEach(vm.routineSteps) { routineStep in
-                        RoutineStepRowView(routineStep: routineStep)
-                            .padding(.horizontal, 45)
-                         
+                        NavigationLink(destination: RoutineStepDetailView(routineStep: routineStep)) {
+                            RoutineStepRowView(routineStep: routineStep)
+                                .padding(.horizontal, 45)
+                        }
                     }
                     .onDelete(perform: deleteItem)
                     
@@ -186,8 +189,5 @@ extension MorningRoutineView {
                 .padding(0)
             }
         }
-        
-        
-        
     }
 }

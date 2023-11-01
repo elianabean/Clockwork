@@ -165,7 +165,7 @@ struct DayView: View {
             VStack{
                 Text("11/01")
                     .font(.custom("Lato-Regular", size: 16))
-                    .foregroundColor(.black.opacity(0.7))
+                    .foregroundColor(.gray.opacity(0.1))
                 
                 Image(systemName: "circle.fill")
                     .resizable()

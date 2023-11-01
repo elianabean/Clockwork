@@ -4,6 +4,7 @@
 //
 //  Created by Eliana Wang on 7/27/23.
 //
+// Mountains Image from https://pixabay.com/photos/rough-horn-alpine-2146181/
 
 import SwiftUI
 

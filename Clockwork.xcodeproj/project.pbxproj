@@ -69,6 +69,9 @@
 		DDA4B39F2AF2D1D300B6E9C0 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDA4B38C2AF2D1D200B6E9C0 /* Montserrat-SemiBold.ttf */; };
 		DDA4B3A02AF2D1D300B6E9C0 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDA4B38C2AF2D1D200B6E9C0 /* Montserrat-SemiBold.ttf */; };
 		DDA4B3A12AF2D1D300B6E9C0 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDA4B38C2AF2D1D200B6E9C0 /* Montserrat-SemiBold.ttf */; };
+		DDA4B3A32AF2EF1E00B6E9C0 /* RoutineStepDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA4B3A22AF2EF1E00B6E9C0 /* RoutineStepDetailView.swift */; };
+		DDA4B3A42AF2EF1E00B6E9C0 /* RoutineStepDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA4B3A22AF2EF1E00B6E9C0 /* RoutineStepDetailView.swift */; };
+		DDA4B3A52AF2EF1E00B6E9C0 /* RoutineStepDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA4B3A22AF2EF1E00B6E9C0 /* RoutineStepDetailView.swift */; };
 		DDA617F62AE1ED93009C4EFA /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA617F52AE1ED93009C4EFA /* AccountView.swift */; };
 		DDA617FC2AE1F2C4009C4EFA /* RoutineStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA617FB2AE1F2C4009C4EFA /* RoutineStep.swift */; };
 		DDA618002AECB22B009C4EFA /* ClockworkTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA617FF2AECB22B009C4EFA /* ClockworkTabView.swift */; };
@@ -126,6 +129,7 @@
 		DDA4B38A2AF2D1CF00B6E9C0 /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
 		DDA4B38B2AF2D1CF00B6E9C0 /* Montserrat-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Thin.ttf"; sourceTree = "<group>"; };
 		DDA4B38C2AF2D1D200B6E9C0 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		DDA4B3A22AF2EF1E00B6E9C0 /* RoutineStepDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineStepDetailView.swift; sourceTree = "<group>"; };
 		DDA617F52AE1ED93009C4EFA /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		DDA617FB2AE1F2C4009C4EFA /* RoutineStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineStep.swift; sourceTree = "<group>"; };
 		DDA617FF2AECB22B009C4EFA /* ClockworkTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockworkTabView.swift; sourceTree = "<group>"; };
@@ -214,6 +218,7 @@
 				DDA4B38B2AF2D1CF00B6E9C0 /* Montserrat-Thin.ttf */,
 				DDA4B3282AF2BEEF00B6E9C0 /* Info.plist */,
 				DDA4B31A2AF0779700B6E9C0 /* ClockworkApp.swift */,
+				DDA4B3A22AF2EF1E00B6E9C0 /* RoutineStepDetailView.swift */,
 				DDA617FF2AECB22B009C4EFA /* ClockworkTabView.swift */,
 				DDBA343D2A6ECF7700114F84 /* ContentView.swift */,
 				DDBA343F2A6ECF7900114F84 /* Assets.xcassets */,
@@ -450,6 +455,7 @@
 				DD8645D42AD46B0800AE4D0F /* DashboardView.swift in Sources */,
 				DDA4B3232AF2AFD100B6E9C0 /* Login2View.swift in Sources */,
 				DDBA349E2A72C6A500114F84 /* Login1View.swift in Sources */,
+				DDA4B3A32AF2EF1E00B6E9C0 /* RoutineStepDetailView.swift in Sources */,
 				DDA617FC2AE1F2C4009C4EFA /* RoutineStep.swift in Sources */,
 				DDA618002AECB22B009C4EFA /* ClockworkTabView.swift in Sources */,
 				DDA618022AECB31E009C4EFA /* MorningRoutineView.swift in Sources */,
@@ -462,6 +468,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDA4B3A42AF2EF1E00B6E9C0 /* RoutineStepDetailView.swift in Sources */,
 				DDBA344E2A6ECF7900114F84 /* ClockworkTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -472,6 +479,7 @@
 			files = (
 				DDBA345A2A6ECF7900114F84 /* ClockworkUITestsLaunchTests.swift in Sources */,
 				DDBA34582A6ECF7900114F84 /* ClockworkUITests.swift in Sources */,
+				DDA4B3A52AF2EF1E00B6E9C0 /* RoutineStepDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

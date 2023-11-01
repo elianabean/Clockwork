@@ -15,8 +15,7 @@ struct ClockworkApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ClockworkTabView()
-                .environmentObject(routineStepViewModel)
+            Login1View()
         }
     }
 }

@@ -11,6 +11,8 @@ struct Login2View: View {
     @State var username: String = ""
     @State var password: String = ""
     
+    @StateObject private var routineStepViewModel = RoutineStepViewModel()
+    
     var body: some View {
         NavigationView {
             GeometryReader { geo in
@@ -35,8 +37,10 @@ struct Login2View: View {
                         Form {
                             Section {
                                 TextField("Username", text: $username)
+                                    .autocapitalization(.none)
                                     .textFieldStyle(RoundedBorderTextFieldStyle())
                                 SecureField("Password", text: $password)
+                                    .autocapitalization(.none)
                                     .textFieldStyle(RoundedBorderTextFieldStyle())
                             } header: {
                                 Text("Account Details")
@@ -54,7 +58,8 @@ struct Login2View: View {
                                         .foregroundColor(Color.white)
                                 
                             }.background(
-                                NavigationLink("", destination: DashboardView().navigationBarBackButtonHidden(true))
+                                NavigationLink("", destination: ClockworkTabView()
+                                    .environmentObject(routineStepViewModel).navigationBarBackButtonHidden(true))
                                     .opacity(0)
                             )
                             
