@@ -180,6 +180,7 @@ extension MorningRoutineView {
                             RoutineStepRowView(routineStep: routineStep)
                                 .padding(.horizontal, 45)
                         }
+                        .buttonStyle(PlainButtonStyle())
                     }
                     .onDelete(perform: deleteItem)
                     

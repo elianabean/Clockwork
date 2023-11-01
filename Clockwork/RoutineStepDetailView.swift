@@ -16,7 +16,7 @@ struct RoutineStepDetailView: View {
             Image(routineStep.imageName)
                 .resizable()
                 .aspectRatio(contentMode: .fill)
-                .frame(width: 300, height: 225)
+                .frame(width: 275, height: 225)
                 .clipped() //to stay inside frame
             
             VStack(spacing: 0) {
@@ -52,7 +52,7 @@ struct RoutineStepDetailView: View {
          */
         
     }
-        .frame(width: 300, height: 350)
+        .frame(width: 275, height: 350)
         .background(Color(.systemBackground))
         .cornerRadius(12)
         //.shadow(radius: 40)
