@@ -51,7 +51,7 @@ struct RoutineStepRowView: View {
             
             Spacer()
             
-            Image("toothbrush")
+            Image(routineStep.imageName)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 60, height: 60)
@@ -71,7 +71,7 @@ struct RoutineStepRowView_Previews: PreviewProvider {
         RoutineStepRowView(routineStep: RoutineStep(
             name: "Go to Sleep",
             description: "yes",
-            imageURL: "",
+            imageName: "toothbrush",
             isDone: false))
     }
 }

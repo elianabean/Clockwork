@@ -6,12 +6,13 @@
 //
 
 import Foundation
+import PhotosUI
 
 struct RoutineStep: Codable, Identifiable, Equatable {
     var id = UUID()
     let name: String
     let description: String
-    let imageURL: String
+    let imageName: String
     let isDone: Bool
     
     static func == (lhs: RoutineStep, rhs: RoutineStep) -> Bool {
@@ -49,7 +50,7 @@ class RoutineStepViewModel: ObservableObject {
             }
             
             let toBeUpdatedRoutineStep = routineSteps[index]
-            let updatedRoutineStep = RoutineStep(name: toBeUpdatedRoutineStep.name, description: toBeUpdatedRoutineStep.description, imageURL: toBeUpdatedRoutineStep.imageURL, isDone: !(toBeUpdatedRoutineStep.isDone))
+            let updatedRoutineStep = RoutineStep(name: toBeUpdatedRoutineStep.name, description: toBeUpdatedRoutineStep.description, imageName: toBeUpdatedRoutineStep.imageName, isDone: !(toBeUpdatedRoutineStep.isDone))
             routineSteps[index] = updatedRoutineStep
         }
 

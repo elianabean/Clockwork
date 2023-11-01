@@ -41,6 +41,17 @@ struct MorningRoutineView: View {
     
     @EnvironmentObject private var vm: RoutineStepViewModel
     
+    func deleteItem2(routineStep: RoutineStep) {
+        if let index = vm.routineSteps.firstIndex(of: routineStep) {
+            vm.routineSteps.remove(at: index)
+            }
+        }
+    
+    func deleteItem(at offsets: IndexSet) {
+        vm.routineSteps.remove(atOffsets: offsets)
+        }
+    
+    @State var items = ["Item 1", "Item 2", "Item 3"]
     
     var body: some View {
         
@@ -130,13 +141,16 @@ struct MorningRoutineView: View {
                         Button {
                             vm.showCreateStepSheet.toggle()
                         } label: {
-                            Image(systemName: "plus")
-                                .font(.headline)
-                                .cornerRadius(10)
-                                .background(.gray)
-                                .shadow(radius: 4)
+                            /*Button design from https://www.appcoda.com/swiftui-buttons/ */
+                            Text("New Step")
+                                .fontWeight(.bold)
+                                .font(.system(size: 20))
                                 .padding()
+                                .background(Color.blue)
+                                .cornerRadius(40)
+                                .foregroundColor(.white)
                         }
+                        
                     }
                 }
                 
@@ -183,18 +197,37 @@ struct MorningRoutineView_Previews: PreviewProvider {
 
 extension MorningRoutineView {
     
+    
     var routineStepCells: some View {
-        ScrollView {
+        NavigationStack {
             VStack(spacing: 5) {
-                ForEach(vm.routineSteps) { routineStep in
-                    RoutineStepRowView(routineStep: routineStep)
-                        .padding(.horizontal, 45)
-                    
+                List {
+                    ForEach(vm.routineSteps) { routineStep in
+                        RoutineStepRowView(routineStep: routineStep)
+                            .padding(.horizontal, 45)
+                        /*
+                        Text("lol")
+                            .padding(20)
+                            .background(.red)
+                        */
+                        /*
+                            .swipeActions {
+                                Button(role: .destructive) {
+                                    deleteItem2(routineStep: routineStep)
+                                } label: {
+                                    Label("Delete", systemImage: "trash")
+                                }
+                        
+                            }
+                         */
+                         
+                    }
+                    .onDelete(perform: deleteItem)
                 }
-                .onDelete { indexSet in
-                    vm.routineSteps.remove(atOffsets: indexSet)
-                }
+                
+                
             }
         }
+        
     }
 }
