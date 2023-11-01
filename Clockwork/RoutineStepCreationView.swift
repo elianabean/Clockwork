@@ -81,22 +81,6 @@ extension RoutineStepCreationView {
                 Text("Image")
             }
             
-            /*
-            Section {
-                PhotosPicker(selection: $photosPickerItem, matching: .images ) {
-                    Image("mountain landscape")
-                        .resizable()
-                        .scaledToFill()
-                        .frame(width: 100, height: 100)
-                }
-            } header: {
-                Text("Upload Image")
-            }
-        }
-        .onChange(of: photosPickerItem) { _, _ in
-             */
-            
-            
         }
     }
     
@@ -116,12 +100,16 @@ extension RoutineStepCreationView {
                 .fontWeight(.bold)
                 .font(.system(size: 20))
                 .padding()
-                .background(Color.blue)
+                .background(Color("PrimaryDarkBlue"))
                 .cornerRadius(40)
                 .foregroundColor(.white)
+            
                 
         }
+        
         .buttonStyle(.borderedProminent)
         .padding(.bottom, 40)
+        .tint(Color("PrimaryDarkBlue"))
+        
     }
 }

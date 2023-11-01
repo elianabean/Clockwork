@@ -32,6 +32,7 @@ struct RoutineStepRowView: View {
                     Text(routineStep.name)
                         .font(.title2)
                         .fontWeight(.medium)
+                        .foregroundColor(.black.opacity(0.8))
                     
                     Text(routineStep.description)
                         .foregroundColor(.secondary)

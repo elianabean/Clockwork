@@ -8,18 +8,24 @@
 import SwiftUI
 
 struct ClockworkTabView: View {
+    init() {
+        UITabBar.appearance().backgroundColor = .gray.withAlphaComponent(0.1)
+
+    }
+    
     var body: some View {
         TabView {
-            MorningRoutineView()
+            
+            DashboardView()
                 .tabItem {
-                    Image(systemName: "sun.max.fill")
-                    Text("Morning")
+                    Image(systemName: "house.fill")
+                    Text("Home")
                 }
             
-            NightRoutineView()
+            MorningRoutineView()
                 .tabItem {
-                    Image(systemName: "moon.zzz.fill")
-                    Text("Night")
+                    Image(systemName: "clock.fill")
+                    Text("Routine")
                 }
             
             AccountView()
@@ -28,6 +34,7 @@ struct ClockworkTabView: View {
                     Text("Account")
                 }
         }
+        .accentColor(Color("SummerSkyBlue"))
         
     }
 }
@@ -35,5 +42,6 @@ struct ClockworkTabView: View {
 struct ClockworkTabView_Previews: PreviewProvider {
     static var previews: some View {
         ClockworkTabView()
+            .environmentObject(RoutineStepViewModel())
     }
 }

@@ -9,43 +9,8 @@ import SwiftUI
 
 
 struct MorningRoutineView: View {
-    /*
-    @State var sampleSteps = [
-        RoutineStep(
-            name: "Brush Teeth",
-            description: "Brush teeth for 3 minutes or else your teeth will grow cavities",
-            imageURL: "",
-            isDone: true),
-        RoutineStep(
-            name: "Brush Hair",
-            description: "yes",
-            imageURL: "",
-            isDone: true),
-        RoutineStep(
-            name: "Use Lotion",
-            description: "yes",
-            imageURL: "",
-            isDone: false),
-        RoutineStep(
-            name: "Set Alarm",
-            description: "yes",
-            imageURL: "",
-            isDone: false),
-        RoutineStep(
-            name: "Go to Sleep",
-            description: "yes",
-            imageURL: "",
-            isDone: false)
-    ]
-     */
     
     @EnvironmentObject private var vm: RoutineStepViewModel
-    
-    func deleteItem2(routineStep: RoutineStep) {
-        if let index = vm.routineSteps.firstIndex(of: routineStep) {
-            vm.routineSteps.remove(at: index)
-            }
-        }
     
     func deleteItem(at offsets: IndexSet) {
         vm.routineSteps.remove(atOffsets: offsets)
@@ -83,11 +48,12 @@ struct MorningRoutineView: View {
                                     }
                                     .frame(maxWidth: .infinity, alignment: .leading)
                                     .padding(.leading, 20)
+                                    .foregroundColor(.black.opacity(0.8))
                                     
                                     
                                     Divider()
                                         .frame(width: 180, height: 2.5)
-                                        .overlay(.black)
+                                        .overlay(.black.opacity(0.7))
                                         .padding(.leading, 20)
                                         .frame(maxWidth: .infinity, alignment: .leading)
                                     
@@ -118,17 +84,17 @@ struct MorningRoutineView: View {
                                 Image(systemName: "sun.max.fill")
                                 Text("My Morning Routine")
                                     .lineLimit(1)
+                                    .foregroundColor(.black.opacity(0.8))
                             }
                             Divider()
                                 .frame(width: 180, height: 2.5)
-                                .overlay(.black)
+                                .overlay(.black.opacity(0.8))
                                 
                         } //VStack
                         .padding(.leading, 20)
                         .padding(.top, 20)
                         .frame(width: geo.size.width, alignment: .leading)
                         
-                        Spacer()
                         
                         VStack(alignment: .leading) {
                             routineStepCells
@@ -138,6 +104,7 @@ struct MorningRoutineView: View {
                             RoutineStepCreationView()
                         }
                         
+                        
                         Button {
                             vm.showCreateStepSheet.toggle()
                         } label: {
@@ -146,7 +113,7 @@ struct MorningRoutineView: View {
                                 .fontWeight(.bold)
                                 .font(.system(size: 20))
                                 .padding()
-                                .background(Color.blue)
+                                .background(Color("PrimaryDarkBlue"))
                                 .cornerRadius(40)
                                 .foregroundColor(.white)
                         }
@@ -156,8 +123,11 @@ struct MorningRoutineView: View {
                 
             }
                 .frame(maxHeight: .infinity)
+                .background(.white)
            
                 }
+       .padding(.bottom, 20)
+        
         
     }
 }
@@ -176,7 +146,7 @@ struct ProgressBar: View {
             RoundedRectangle(cornerRadius: 20, style: .continuous)
                 .frame(width: percent * multiplier, height: 20)
                 .background(
-                    LinearGradient(gradient: Gradient(colors: [Color.red, Color.blue]), startPoint: .leading, endPoint: .trailing)
+                    LinearGradient(gradient: Gradient(colors: [Color("DeepSkyBlue"), Color("SummerSkyBlue")]), startPoint: .leading, endPoint: .trailing)
                         .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
                 )
             
@@ -196,8 +166,6 @@ struct MorningRoutineView_Previews: PreviewProvider {
 }
 
 extension MorningRoutineView {
-    
-    
     var routineStepCells: some View {
         NavigationStack {
             VStack(spacing: 5) {
@@ -205,29 +173,18 @@ extension MorningRoutineView {
                     ForEach(vm.routineSteps) { routineStep in
                         RoutineStepRowView(routineStep: routineStep)
                             .padding(.horizontal, 45)
-                        /*
-                        Text("lol")
-                            .padding(20)
-                            .background(.red)
-                        */
-                        /*
-                            .swipeActions {
-                                Button(role: .destructive) {
-                                    deleteItem2(routineStep: routineStep)
-                                } label: {
-                                    Label("Delete", systemImage: "trash")
-                                }
-                        
-                            }
-                         */
                          
                     }
                     .onDelete(perform: deleteItem)
+                    
                 }
-                
-                
+                .listStyle(PlainListStyle())
+                .scrollContentBackground(.hidden)
+                .padding(0)
             }
         }
+        
+        
         
     }
 }
