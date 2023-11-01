@@ -127,6 +127,7 @@ struct MorningRoutineView: View {
            
                 }
        .padding(.bottom, 20)
+       .frame(maxWidth: .infinity, maxHeight: .infinity)
         
         
     }
@@ -154,8 +155,10 @@ struct ProgressBar: View {
             
         }
         
+        
     }
 }
+
 
 struct MorningRoutineView_Previews: PreviewProvider {
     static var previews: some View {

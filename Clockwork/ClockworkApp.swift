@@ -14,7 +14,7 @@ struct ClockworkApp: App {
     
     var body: some Scene {
         WindowGroup {
-            MorningRoutineView()
+            ClockworkTabView()
                 .environmentObject(routineStepViewModel)
         }
     }

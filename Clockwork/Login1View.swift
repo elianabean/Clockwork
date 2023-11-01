@@ -32,7 +32,7 @@ struct Login1View: View {
                     
                     Spacer()
                     
-                    Text("An app designed to help you stick to your routines!")
+                    Text("A personalizable app help you create, establish, and stick to your routines!")
                         .font(.system(size: 24))
                         .foregroundColor(.black)
                         .padding(EdgeInsets(top: 0, leading: 40, bottom: 0, trailing: 40))
@@ -43,27 +43,34 @@ struct Login1View: View {
                     HStack{
                         Spacer()
                         Button {
-                        } label: {
-                            Text("Log in")
-                                .font(.system(size: 20))
-                                .padding(EdgeInsets(top: 20, leading: 30, bottom: 20, trailing: 30))
-                        }
                             
-                            .foregroundColor(.white)
-                            .background(.gray)
-                            .cornerRadius(10)
+                        } label: {
+                            /*Button design from https://www.appcoda.com/swiftui-buttons/ */
+                            Text("Log in")
+                                .frame(width: 100, height: 25)
+                                .fontWeight(.bold)
+                                .font(.system(size: 20))
+                                .padding()
+                                .background(Color("PrimaryDarkBlue"))
+                                .cornerRadius(20)
+                                .foregroundColor(.white)
+                        }
                         
                         Spacer()
                         
                         Button {
+                            
                         } label: {
+                            /*Button design from https://www.appcoda.com/swiftui-buttons/ */
                             Text("Sign Up")
+                                .frame(width: 100, height: 25)
+                                .fontWeight(.bold)
                                 .font(.system(size: 20))
-                                .padding(EdgeInsets(top: 20, leading: 30, bottom: 20, trailing: 30))
+                                .padding()
+                                .background(Color("PrimaryDarkBlue"))
+                                .cornerRadius(20)
+                                .foregroundColor(.white)
                         }
-                            .foregroundColor(.white)
-                            .background(.gray)
-                            .cornerRadius(10)
                         
                         Spacer()
                     }

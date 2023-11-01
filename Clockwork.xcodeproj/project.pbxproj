@@ -11,6 +11,7 @@
 		DDA4B31B2AF0779700B6E9C0 /* ClockworkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA4B31A2AF0779700B6E9C0 /* ClockworkApp.swift */; };
 		DDA4B31D2AF08AF500B6E9C0 /* RoutineStepCreationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA4B31C2AF08AF500B6E9C0 /* RoutineStepCreationView.swift */; };
 		DDA4B31F2AF090F700B6E9C0 /* RoutineStepRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA4B31E2AF090F700B6E9C0 /* RoutineStepRowView.swift */; };
+		DDA4B3212AF2AF7000B6E9C0 /* Login2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA4B3202AF2AF7000B6E9C0 /* Login2.swift */; };
 		DDA617F62AE1ED93009C4EFA /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA617F52AE1ED93009C4EFA /* AccountView.swift */; };
 		DDA617FC2AE1F2C4009C4EFA /* RoutineStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA617FB2AE1F2C4009C4EFA /* RoutineStep.swift */; };
 		DDA618002AECB22B009C4EFA /* ClockworkTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA617FF2AECB22B009C4EFA /* ClockworkTabView.swift */; };
@@ -47,6 +48,7 @@
 		DDA4B31A2AF0779700B6E9C0 /* ClockworkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockworkApp.swift; sourceTree = "<group>"; };
 		DDA4B31C2AF08AF500B6E9C0 /* RoutineStepCreationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineStepCreationView.swift; sourceTree = "<group>"; };
 		DDA4B31E2AF090F700B6E9C0 /* RoutineStepRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineStepRowView.swift; sourceTree = "<group>"; };
+		DDA4B3202AF2AF7000B6E9C0 /* Login2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login2.swift; sourceTree = "<group>"; };
 		DDA617F52AE1ED93009C4EFA /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		DDA617FB2AE1F2C4009C4EFA /* RoutineStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineStep.swift; sourceTree = "<group>"; };
 		DDA617FF2AECB22B009C4EFA /* ClockworkTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockworkTabView.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				DDBA34412A6ECF7900114F84 /* Clockwork.entitlements */,
 				DDBA34422A6ECF7900114F84 /* Preview Content */,
 				DDBA349D2A72C6A500114F84 /* Login1View.swift */,
+				DDA4B3202AF2AF7000B6E9C0 /* Login2.swift */,
 				DDA617F52AE1ED93009C4EFA /* AccountView.swift */,
 				DD8645D32AD46B0800AE4D0F /* DashboardView.swift */,
 				DDA618012AECB31E009C4EFA /* MorningRoutineView.swift */,
@@ -292,6 +295,7 @@
 				DDA618042AECB34C009C4EFA /* NightRoutineView.swift in Sources */,
 				DD8645D42AD46B0800AE4D0F /* DashboardView.swift in Sources */,
 				DDBA349E2A72C6A500114F84 /* Login1View.swift in Sources */,
+				DDA4B3212AF2AF7000B6E9C0 /* Login2.swift in Sources */,
 				DDA617FC2AE1F2C4009C4EFA /* RoutineStep.swift in Sources */,
 				DDA618002AECB22B009C4EFA /* ClockworkTabView.swift in Sources */,
 				DDA618022AECB31E009C4EFA /* MorningRoutineView.swift in Sources */,

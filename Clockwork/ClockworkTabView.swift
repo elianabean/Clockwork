@@ -23,6 +23,7 @@ struct ClockworkTabView: View {
                 }
             
             MorningRoutineView()
+            
                 .tabItem {
                     Image(systemName: "clock.fill")
                     Text("Routine")
